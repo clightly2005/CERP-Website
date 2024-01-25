@@ -1,3 +1,11 @@
+//JavaScript code
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
 // creates variable called slideIndex and sets it to 1 (first image in index)
 let slideIndex = 1;
 
