@@ -8,18 +8,39 @@
   <body>
   <!--this changes the background colour around my wrapper-->
   <body>
-    <div class="navigation-bar">
+    <nav id="navbar">
+      <div class="logo"> 
         <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
-        <ul>
-          <!--unordered list-->
-          <a href="index.html">Home</a
-          ><!--a is a anchor link with href to other pages-->
-          <a href="RWS.html">Rotation</a>
-          <a href="EC.html">Curriculars</a>
-          <a href="UNI.html">University</a>
-          <a href="FBR.html">Reflection</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="RWS.html">Rotation</a></li>
+          <li><a href="EC.html">Curriculars</a></li>
+          <li><a href="UNI.html">University</a></li>
+          <li><a href="FBR.html">Reflection</a></li>
         </ul>
       </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="RWS.html">Rotation</a></li>
+          <li><a href="EC.html">Curriculars</a></li>
+          <li><a href="UNI.html">University</a></li>
+          <li><a href="FBR.html">Reflection</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+   
     <div class="title">
       <h1>University</h1>
     </div>
@@ -28,7 +49,7 @@
       </div>
     <div class="subhead">
       <h3>First module: Foundations of Management</h3>
-      <h4>Grade:</h4>
+      <h4>Grade: 68%</h4>
       <img src="\Images\university.png" alt="uni.notes" />
       <img src="\Images\university1.png" alt="uni.notes1" />
     </div>

@@ -6,29 +6,50 @@
     <link rel="stylesheet" href="\CSS\style.css" />
   </head>
   <body>
-    <!--this changes the background colour around my wrapper-->
-
-    <div class="navigation-bar">
+    <nav id="navbar">
+      <div class="logo"> 
+        <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="RWS.html">Rotation</a></li>
+          <li><a href="EC.html">Curriculars</a></li>
+          <li><a href="UNI.html">University</a></li>
+          <li><a href="FBR.html">Reflection</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
       <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
-      <ul>
-        <!--unordered list-->
-        <a href="index.html">Home</a>
-        <a href="RWS.html">Rotation</a>
-        <a href="EC.html">Curriculars</a>
-        <a href="UNI.html">University</a>
-        <a href="FBR.html">Reflection</a>
-      </ul>
-    </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="RWS.html">Rotation</a></li>
+          <li><a href="EC.html">Curriculars</a></li>
+          <li><a href="UNI.html">University</a></li>
+          <li><a href="FBR.html">Reflection</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
 
+  
     <div class="title">
       <h1>Rotational Workstack</h1>
     </div>
     <div class="blurb">
       <h2>D Team | Rotation 01 | Charlotte Lightly</h2>
     </div>
-    <div class="web-server-pic">
-      <img src="\Images\webserver.png" alt="webserver-pic" />
+    <div id="web-server">
+      <img class="pic1" src="\Images\webserver.png" alt="webserver-pic" />
       <figcaption>Website hosted on CERP</figcaption>
+      <img class="pic2" src="\Images\CERP.png">
     </div>
     <!--this adds a footer to bottom of my page -->
     <!-- this can make drop down toggle for each topic -->

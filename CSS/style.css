@@ -64,7 +64,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 .menu-links {
@@ -104,12 +104,7 @@ a:hover {
 }
 .hamburger-icon span:first-child {
   transform: none;
-}
-.hamburger-icon span:first-child {
   opacity: 1;
-}
-.hamburger-icon span:first-child {
-  transform: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -123,59 +118,64 @@ a:hover {
 
 /* this styles the subheading for my uni page */
 .subhead h3 {
-  font-size: 40px;
+  font-size: 1rem;
   margin-left: 5%;
 }
 .subhead h4 {
-  font-size: 30px;
+  font-size: 1.1rem;
   margin-left: 50%;
   display: flex;
 }
 .subhead img {
-  margin-left: 50px;
-  width: 410px;
-  height: 483px;
-}
-.web-server-pic img {
-  margin-left: 800px;
-  min-width: 600px;
-  max-width: 800px;
-  height: 400px;
-  text-align: space-between;
+  margin-left: 5%;
   display: inline-block;
+  width: 20rem;
+  height: auto;
 }
-.web-server-pic figcaption {
+#web-server .pic1 {
+  margin-left: 3%;
+  min-width: 30rem;
+  max-width: 40rem;
+  height: auto;
+  display: flex;
+}
+#web-server .pic2 {
+  margin-left: 50%;
+  min-width: 30rem;
+  max-width: 40rem;
+  height: auto;
+  display: flex;
+}
+#web-server figcaption {
   text-align: center;
-  margin-left: 800px;
-  margin-top: 30px;
+  margin-left: 3%;
   background-color: #c6c3c3;
-  max-width: 600px;
+  max-width: 40rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 /* this controls my bullet point text */
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 /* this controls the title header for ecah page */
 h1 {
-  font-size: 50px;
-  margin-top: 150px;
+  font-size: 3rem;
+  margin: 5% 95% 0 5%;
+  width: 50%;
 }
 /* for the text position in nav bar (h2) */
 .blurb {
   display: inline-block;
   border: 1px solid #5307d6;
-  width: 120px;
+  width: 10%;
   padding: 15px;
   text-align: center;
-  margin-left: 90%;
-  margin-top: 0px;
-  border-radius: 30%;
+  margin: 2% 95% 3%;
+  border-radius: 20%;
+  font-size: 0.7rem;
 }
-/* this controls the text in the top right container */
-.blurb h2 {
-  font-size: 15px;
-  color: #1a1919;
-}
+
 /* footer text */
 .footer p {
   color: #f1f1f1;
@@ -190,8 +190,9 @@ h1 {
   color: white;
   padding: 20px;
   font-size: 20px;
-  border: none;
   min-width: 300px;
+  display: flex;
+  top: 0;
   border-top-right-radius: 4%;
   border-bottom-left-radius: 4%;
 }
