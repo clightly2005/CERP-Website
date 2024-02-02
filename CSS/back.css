@@ -12,16 +12,17 @@ html {
   scroll-behavior: smooth;
 }
 /*NAV FOR DESKTOP VIEW*/
-#navbar {
-  position: relative;
+#navbar,
+.nav-links {
   display: flex;
-  justify-content: space-between;
+}
+#navbar {
+  justify-content: space-around;
   align-items: center;
   height: 12vh;
   background-color: black;
 }
 .nav-links {
-  display: flex;
   gap: 8rem;
   list-style: none;
   font-size: 1.5rem;
@@ -40,43 +41,40 @@ a:hover {
   display: inline-flex;
   width: 6.3rem;
   height: auto;
-  margin-left: 20%;
+  margin-left: 23%;
 }
-
 /* TOGGLE FOR PHONE VIEW */
+
 #hamburger-nav {
-  display: none; /*desktop view hides toggle*/
+  display: none;
 }
 .hamburger-menu {
-  position: relative;
-  display: flex;
-  position: absolute;
-  top: 2%;
-  right: 2%;
+  position: fixed;
+  display: inline-flex;
+  left: 20px;
+  top: 30px;
 }
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 2rem;
+  width: 2.5rem;
   cursor: pointer;
 }
 .hamburger-icon span {
   width: 100%;
-  height: 2px;
+  height: 0.1rem;
   background-color: white;
 }
 .menu-links {
   position: absolute;
-  top: 100%;
+  top: 100;
   right: 0;
   background-color: white;
   width: fit-content;
+  max-height: 0;
   overflow: hidden;
-}
-.menu-links li {
-  list-style: none;
 }
 .menu-links a {
   display: block;
@@ -86,9 +84,8 @@ a:hover {
   color: black;
   text-decoration: none;
 }
-/*focus on JavaScript code css for burger menu*/
 .menu-links.open {
-  max-height: 300px;
+  max-height: 7rem;
 }
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
@@ -104,35 +101,84 @@ a:hover {
   opacity: 1;
 }
 
-/* this controls the title header for ecah page */
-h1 {
+.title h1 {
+  /*this does my page titles*/
   font-size: 3rem;
-  margin: 5% 95% 0 5%;
-  width: 50%;
+  margin-left: 7%;
+  margin-top: 5%;
 }
-.subhead h3 {
-  font-size: 1.4rem;
-  margin-left: 5%;
-}
-h3 span {
-  font-weight: 800;
-}
-p {
-  font-size: 1rem;
+.rotation h1 {
+  /*this does my D team text under title*/
+  font-size: 1.3rem;
+  margin-left: 7%;
+  margin-top: 1%;
 }
 /* SLIDESHOW */
 #slideshow-container {
-  border-radius: 10%;
   display: flex;
   position: absolute;
-  top: 120;
+  width: 66%;
+  height: auto;
+  border: 2px solid red;
+  margin-left: 19%;
+  margin-right: 19%;
+  margin-top: 17%;
+  height: 20%;
+  font-size: 1.3rem;
+}
+#grade {
+  margin-left: 10%;
+  margin-top: 5%;
+  display: inline-block;
+}
+#grade h1 {
+  font-size: 1.2rem;
+}
+#grade img {
+  width: 40%;
+  height: 20%;
+  border-radius: 10%;
+}
+#projects {
+  position: relative;
+  margin: 3%;
+}
+.project-img {
+  border-radius: 0.5rem;
   width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
   height: 20%;
 }
-.carousel-item {
-  width: 100%;
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 0.7rem;
+  border: 0.1rem solid #8533ff;
+  text-align: center;
+  color: #595959;
 }
 
 /* this is the styling for the footer at the bottom of my page */
@@ -149,12 +195,7 @@ p {
 .footer p {
   font-size: 1rem;
 }
-@media screen and (min-width: 1656px) {
-  /*this will widen the gap between the nav links on a larger screen */
-  .nav-links {
-    gap: 8rem;
-  }
-}
+
 @media screen and (max-width: 1200px) {
   /*this will display the burger icon nav bar when the page is smaller and hide the normal top navlinks */
   #navbar {
@@ -163,5 +204,25 @@ p {
   #hamburger-nav {
     display: flex;
     background-color: black;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .about-containers {
+    margin-top: 0;
   }
 }
