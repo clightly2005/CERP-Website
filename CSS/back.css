@@ -126,20 +126,9 @@ a:hover {
   height: 20%;
   font-size: 1.3rem;
 }
-#grade {
-  margin-left: 10%;
-  margin-top: 5%;
-  display: inline-block;
-}
-#grade h1 {
-  font-size: 1.2rem;
-}
-#grade img {
-  width: 40%;
-  height: 20%;
-  border-radius: 10%;
-}
+
 #projects {
+  /*this is for my rotation and curriculars page*/
   position: relative;
   margin: 3%;
 }
@@ -177,10 +166,59 @@ a:hover {
   flex: 1;
   border-radius: 0.7rem;
   border: 0.1rem solid #8533ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   color: #595959;
 }
+.feedback {
+  /*fbr page*/
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  background-color: #f2f2f2;
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.feedback h1 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.feedback h2 {
+  font-size: 1rem;
+}
+.box-p {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.university {
+  display: grid;
 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+}
+img {
+  max-width: 65%;
+  max-height: 65%;
+}
+.uni {
+  background-color: #f2f2f2;
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0px;
+}
+.uni h1,
+p {
+  padding: 0.5rem;
+}
+.uni h1 {
+  font-size: 1.3rem;
+}
 /* this is the styling for the footer at the bottom of my page */
 .footer {
   width: 100%;
