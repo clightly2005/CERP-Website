@@ -234,8 +234,6 @@ a:hover {
   padding: 0;
 }
 
-#carousel .carousel-item {
-}
 @media screen and (max-width: 1200px) {
   /*this will display the burger icon nav bar when the page is smaller and hide the normal top navlinks */
   #navbar {
