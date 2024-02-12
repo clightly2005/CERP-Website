@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charlottes Website</title>
     <!--this gives the website a name-->
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="\CSS\back.css" />
     <!--this will link the html andf css files together-->
   </head>
 
   <body>
     <nav id="navbar">
-      <div> 
-        <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO"/>
+      <div>
+        <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
       </div>
       <div>
         <ul class="nav-links">
@@ -27,31 +27,54 @@
     </nav>
     <nav id="hamburger-nav">
       <img class="logo" src="\Images\BT_logo.png" alt="BTLOGO" />
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-          <li><a href="RWS.html" onclick="toggleMenu()">Rotation</a></li>
-          <li><a href="EC.html" onclick="toggleMenu()">Curriculars</a></li>
-          <li><a href="UNI.html" onclick="toggleMenu()">University</a></li>
-          <li><a href="FBR.html" onclick="toggleMenu()">Reflection</a></li>
-        </ul>
-      </div>
+          <ul>
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="RWS.html" onclick="toggleMenu()">Rotation</a></li>
+            <li><a href="EC.html" onclick="toggleMenu()">Curriculars</a></li>
+            <li><a href="UNI.html" onclick="toggleMenu()">University</a></li>
+            <li><a href="FBR.html" onclick="toggleMenu()">Reflection</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-          <div class="title">
-            <h1>End of Rotation presentation</h1>
-          </div>
-          <div class="rotation">
-            <h1>D Team | Rotation 01 | Charlotte Lightly</h1>
-          </div>
-    
-    <div id="carousel-cont" data-interval="2000" data-ride="carousel">
+    <div class="title">
+      <h1>End of Rotation presentation</h1>
+    </div>
+    <div class="rotation">
+      <h1>D Team | Rotation 01 | Charlotte Lightly</h1>
+    </div>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/beach.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/beach2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/brum.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div id="carousel-cont" data-interval="2000" data-ride="carousel">
         <div class="item active">
           <img src="\Images\brum.png" alt="birmingham" class="img-responsive">
           <div class="carousel-caption">
@@ -100,14 +123,15 @@
             <h1>Careers Event</h1>
             <p>slide eight</p>
         </div>
-    </div>
-      
-    <script src="C:\Users\615447542\OneDrive - BT Plc\Documents\C website\JavaScript\function.js"></script>
-    <!--this liks the java script file to my html-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </div> -->
+
+    <!--this adds a footer to bottom of my page -->
     <div class="footer">
       <p>Software Engineering Degree Aprrentice @ BT Group</p>
     </div>
-    <!--this adds a footer to bottom of my page -->
+
+    <!--this liks the java script file to my html-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="\JavaScript\function.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@
 body {
   font-family: Poppins, serif;
   color: black;
+  height: 100vh;
 }
 html {
   scroll-behavior: smooth;
@@ -220,6 +221,12 @@ a:hover {
 }
 .footer p {
   font-size: 1rem;
+}
+
+#carousel {
+  width: 50%;
+  margin: 20px auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
