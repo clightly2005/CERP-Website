@@ -1,7 +1,7 @@
 const myCarouselElement = document.querySelector("#carousel");
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 3000, // Changes the image every 3 seconds (1000 = 1 Second)
+  interval: 2500, // Changes the image every 3 seconds (1000 = 1 Second)
   touch: false,
 });
 
