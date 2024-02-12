@@ -105,28 +105,13 @@ a:hover {
   /*this does my page titles*/
   font-size: 3rem;
   margin-left: 7%;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .rotation h1 {
   /*this does my D team text under title*/
   font-size: 1.3rem;
   margin-left: 7%;
-  margin-top: 1%;
 }
-/* SLIDESHOW */
-#slideshow-container {
-  display: flex;
-  position: absolute;
-  width: 66%;
-  height: auto;
-  border: 2px solid red;
-  margin-left: 19%;
-  margin-right: 19%;
-  margin-top: 17%;
-  height: 20%;
-  font-size: 1.3rem;
-}
-
 #projects {
   /*this is for my rotation and curriculars page*/
   position: relative;
@@ -137,7 +122,6 @@ a:hover {
   width: 70%;
   height: 20%;
 }
-
 .project-container {
   display: flex;
   justify-content: center;
@@ -172,10 +156,10 @@ a:hover {
 }
 .feedback {
   /*fbr page*/
-  width: 90%;
+  width: 70%;
   margin: auto;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   background-color: #f2f2f2;
   border-radius: 0.7rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -191,34 +175,37 @@ a:hover {
   font-size: 1rem;
 }
 .box-p {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   text-align: left;
 }
-.university {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.5rem;
+.box-p p {
+  font-size: 2rem;
 }
-img {
-  max-width: 65%;
-  max-height: 65%;
+.box-p span {
+  color: #8533ff;
 }
-.uni {
-  background-color: #f2f2f2;
-  border-radius: 0.7rem;
+.img-responsive {
+  width: 70%;
+  justify-content: center;
+}
+.uni-cont {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 0.9rem;
+  border: 0.1rem solid #8533ff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 0px;
 }
-.uni h1,
-p {
-  padding: 0.5rem;
+.uni-img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 0.9rem;
+  padding: 30px 0px 0px 50px;
 }
-.uni h1 {
-  font-size: 1.3rem;
-}
+
 /* this is the styling for the footer at the bottom of my page */
 .footer {
   width: 100%;
@@ -228,6 +215,7 @@ p {
   position: fixed;
   bottom: 0;
   left: 0;
+  padding-bottom: 10px;
   color: white;
 }
 .footer p {
