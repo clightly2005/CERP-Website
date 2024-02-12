@@ -3,11 +3,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: Poppins, serif;
   color: black;
-  height: 100vh;
+  margin-bottom: 5%;
 }
 html {
   scroll-behavior: smooth;
@@ -222,13 +223,19 @@ a:hover {
 .footer p {
   font-size: 1rem;
 }
-
-#carousel {
-  width: 50%;
-  margin: 20px auto;
+.carousel-inner {
   height: 100%;
 }
+#carousel {
+  width: 50%;
+  height: auto;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 0;
+}
 
+#carousel .carousel-item {
+}
 @media screen and (max-width: 1200px) {
   /*this will display the burger icon nav bar when the page is smaller and hide the normal top navlinks */
   #navbar {
