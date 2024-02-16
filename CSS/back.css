@@ -27,7 +27,7 @@ html {
   background-image: linear-gradient(to top, #f4afaf 0%, #f8c8c6 100%);
 }
 .nav-links {
-  gap: 8em;
+  gap: 5em;
   list-style: none;
   font-size: 1.5em;
   justify-content: center;
@@ -38,7 +38,9 @@ html {
   display: flex;
   align-items: flex-end;
   height: 100%;
-  margin-right: 200px;
+}
+.nav-links-container {
+  /* width: 100%; */
 }
 
 ul {
