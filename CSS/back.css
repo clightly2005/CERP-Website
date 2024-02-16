@@ -42,7 +42,7 @@ a:hover {
   text-underline-offset: 1.3em;
 }
 .logo {
-  display: inline-flex;
+  display: flex;
   width: 6.3em;
   height: auto;
   margin-left: 23%;
@@ -169,7 +169,12 @@ a:hover {
 .details-container,
 .feedback,
 .uni-cont {
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
 }
 .feedback {
   /*fbr page*/
@@ -256,7 +261,7 @@ a:hover {
   }
   #hamburger-nav {
     display: flex;
-    background-color: black;
+    background-image: linear-gradient(to top, #f4afaf 0%, #f8c8c6 100%);
   }
 }
 @media screen and (max-width: 1400px) {

@@ -1,3 +1,30 @@
+
+physical lab environment:
+- alex took apart HP server so i put back together including the heatsink, paste and CPU, learning components
+- 2 monitors, 2 servers and a laptop. created static addressing and then DHCP and DNS set up. also acrtive directory for user/passwords
+- created IP spreadsheet to keep things organised.
+- installed rocky and ubuntu linux on laptop to compare, set things like network and storage config.
+
+virtual lab enviroment CERP:
+- deployed pfsense as a virtual firewall/router as a gateway to my test network
+- configured port forwarding to rdp to my domain controller
+- tried to configure role based access control on Vsphere
+- built repo server to install nginx on web server so that rather than default open web page, chnages to index.html file.
+
+
+site:
+- Hyper Text Markup Language and Cascading Style Sheet
+- syntax like front end dev liabaries such as jQuery, bootstrap, SASS etc.
+-javascript also
+
+
+
+Lee for github:
+- code review set up so he can construct feedback
+- merging chnages made
+- commit pushes to repos
+
+
 entuity config what I did ALEX:
 
 made a VM on Dlite red hat linux 8 64bit. installed/configured hostname,
@@ -27,14 +54,18 @@ monitoring on dashbaord web GUI MARK:
 
 
 
+sandbox:
+- config proxy which acts as gateway for security purposes to reach internet
+- repo is a repository we can download files ontofrom WINSCP
+
 dan python:
 
 leanring string, variables, operators and syntax through things like creating: 
--palindrome
+-palindrome (spelt same forward and backward)
 -mancala
--playlist top almbum hits
--rock paper sissors game
--turtle graphics liabary 
+-playlist top almbum hits 
+-rock paper sissors game 
+-turtle graphics liabary (using graphical output to see visual response to input)
 
 
 
