@@ -127,6 +127,7 @@ a:hover {
   border-radius: 0.5em;
   width: 70%;
   height: 20%;
+  margin-bottom: 20px;
 }
 .project-container {
   display: flex;
@@ -167,12 +168,7 @@ a:hover {
 .details-container,
 .feedback,
 .uni-cont {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 .feedback {
   /*fbr page*/
