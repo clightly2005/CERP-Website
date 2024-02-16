@@ -30,7 +30,20 @@ html {
   gap: 8em;
   list-style: none;
   font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
 }
+
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -39,18 +52,20 @@ a {
 a:hover {
   color: #6474e5;
   text-decoration: underline;
-  text-underline-offset: 1.3em;
+  text-underline-offset: 1em;
 }
 .logo {
-  display: flex;
-  width: 6.3em;
-  height: auto;
-  margin-left: 23%;
+  height: 90%;
+  position: relative;
+  left: 50px;
 }
+
 /* TOGGLE FOR PHONE VIEW */
 
 #hamburger-nav {
   display: none;
+  height: 12vh;
+  justify-content: center;
 }
 .hamburger-menu {
   position: fixed;
@@ -169,12 +184,7 @@ a:hover {
 .details-container,
 .feedback,
 .uni-cont {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 .feedback {
   /*fbr page*/
