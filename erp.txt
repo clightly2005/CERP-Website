@@ -36,7 +36,7 @@ which will manage my entuity server.
 ansible is a open sourcesoftware made by red hat written in python that 
 it is a automation tool, which is a form of infrastructure as code. (you specify config in yaml file and it will interpret/
 run for you
-playbooks are writtewn in yaml and this is where u predefine infrastructure. it is agentless so no software agent needs to be installed on end device. ansible uses ssh or powershell to
+playbooks are written in yaml and this is where u predefine infrastructure. it is agentless so no software agent needs to be installed on end device. ansible uses ssh or powershell to
 initiate tasks on managed device.
 
 used an ansible playbook to conduct iunitial config on freshly installed RHEL VM, some of these config tasks where:

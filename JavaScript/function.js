@@ -6,6 +6,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 });
 
 //for hamburger toggle
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
