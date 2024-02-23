@@ -12,6 +12,8 @@ virtual lab enviroment CERP:
 - built repo server to install nginx on web server so that rather than default open web page, chnages to index.html file.
 
 
+
+
 site:
 - Hyper Text Markup Language and Cascading Style Sheet
 - syntax like front end dev liabaries such as jQuery, bootstrap, SASS etc.
@@ -19,10 +21,13 @@ site:
 
 
 
+
+
 Lee for github:
-- code review set up so he can construct feedback
-- merging chnages made
-- commit pushes to repos
+- workign with someone else on code by code review, committing chnages mysel for merging his ones
+- Github version control, branches, pull requests, merging & collaborating with colleagues
+
+
 
 
 entuity config what I did ALEX:
@@ -50,13 +55,25 @@ then used SCP (file copy utility using ssh) to transfer entuity installer iso fi
 then i mounted this iso file onto a new directory and ran installer and started entuity up.
 
 
+
+
+
 monitoring on dashbaord web GUI MARK:
+
+We logged in, created a new dashboard and then in asset management added the following devices/ VM's: Vcenter and then its associated assets, the
+domain controller (windows), test windows server, HP storage server and a test Linux server.
+
+
 
 
 
 sandbox:
 - config proxy which acts as gateway for security purposes to reach internet
 - repo is a repository we can download files ontofrom WINSCP
+
+
+
+
 
 dan python:
 
