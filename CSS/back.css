@@ -192,12 +192,7 @@ a:hover {
 .details-container,
 .feedback,
 .uni-cont {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 .uni-cont {
   margin-top: 5rem;
@@ -210,6 +205,7 @@ a:hover {
   margin-top: 4em;
   border-radius: 0.7em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
 }
 .feedback h1 {
   font-size: 3em;
@@ -249,8 +245,8 @@ a:hover {
 .uni-img {
   max-width: 80%;
   max-height: 80%;
-  border-radius: 0.9em;
-  padding: 30px 0px 0px 50px;
+  border-radius: 2em;
+  padding: 20px;
 }
 
 /* this is the styling for the footer at the bottom of my page */
@@ -287,16 +283,20 @@ ul {
   z-index: 1;
 }
 
-@media screen and (max-width: 1200px) {
-  /*this will display the burger icon nav bar when the page is smaller and hide the normal top navlinks */
-  #navbar {
-    display: none;
+/* stupid weird meeting screen settings */
+@media screen and (max-width: 1920px) {
+  .box-p p,
+  .nav-links {
+    font-size: 1em;
   }
-  #hamburger-nav {
-    display: block;
-    background-image: linear-gradient(to top, #f4afaf 0%, #f8c8c6 100%);
+  .title h1 {
+    font-size: 1.8em;
+  }
+  .rotation h1 {
+    font-size: 1.1em;
   }
 }
+
 @media screen and (max-width: 1400px) {
   .about-containers {
     flex-wrap: wrap;
@@ -312,6 +312,7 @@ ul {
   }
   #hamburger-nav {
     display: flex;
+    background-image: linear-gradient(to top, #f4afaf 0%, #f8c8c6 100%);
   }
   .about-containers {
     margin-top: 0;
