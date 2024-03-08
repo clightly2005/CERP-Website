@@ -38,6 +38,10 @@ html {
 }
 ul {
   margin-bottom: 0px;
+  position: relative;
+  padding-left: 0rem;
+  padding: 10px;
+  z-index: 1;
 }
 a {
   text-decoration: none;
@@ -157,14 +161,25 @@ a:hover {
 }
 .project-title {
   color: #8c97e9;
+  font-size: 1.5em;
 }
-
 .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+}
+/* this acts as what the articile container does for rotation/curriculars but for the uni page */
+.uni-containers img {
+  border-radius: 0.5em;
+  width: 55%;
+  height: auto;
+}
+.uni-containers {
+  justify-content: space-evenly;
+  /* padding issues etc */
+  /* also lee pls fix the image sizing thankyou */
 }
 .about-containers {
   gap: 2rem;
@@ -181,7 +196,6 @@ a:hover {
   padding: 1em;
   flex: 1;
   border-radius: 0.7em;
-  border: 0.1em solid #9aa4ec;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   color: #595959;
@@ -191,18 +205,21 @@ a:hover {
 }
 .details-container,
 .feedback,
-.uni-cont {
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+.uni-containers {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
 }
-.uni-cont {
-  margin-top: 5rem;
-}
+
 .feedback {
   /*fbr page*/
   width: 85%;
   margin: auto;
   margin-bottom: 3em;
-  margin-top: 4em;
+  margin-top: 2em;
   border-radius: 0.7em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
@@ -215,45 +232,23 @@ a:hover {
   margin-right: 45%;
 }
 .feedback h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .box-p {
   padding-top: 10px;
   padding-left: 10px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-.box-p p {
   font-size: 1.6rem;
-}
-.box-p span {
-  color: #6474e5;
 }
 .img-responsive {
   width: 70%;
   justify-content: center;
 }
-.uni-cont {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
-  border-radius: 0.9em;
-  border: 0.1em solid #9aa4ec;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.uni-img {
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 2em;
-  padding: 20px;
-}
 
 /* this is the styling for the footer at the bottom of my page */
 .footer {
   width: 100%;
-  height: 3%;
-  background-color: #e4c2c1;
+  height: 2.3%;
+  background-image: linear-gradient(to top, #f4afaf 0%, #f8c8c6 100%);
   margin: 0;
   position: fixed;
   bottom: 0;
@@ -261,10 +256,11 @@ a:hover {
   padding-bottom: 10px;
 }
 .footer p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-left: 20px;
-  margin-top: 6px;
+  margin-top: 8px;
 }
+/* does my slide show */
 .carousel-inner {
   height: 100%;
 }
@@ -276,18 +272,13 @@ a:hover {
   padding: 0;
 }
 
-ul {
-  position: relative;
-  padding-left: 0rem;
-  padding: 10px;
-  z-index: 1;
-}
-
 /* stupid weird meeting screen settings */
 @media screen and (max-width: 1920px) {
-  .box-p p,
   .nav-links {
     font-size: 1em;
+  }
+  .box-p p {
+    font-size: 0.9em;
   }
   .title h1 {
     font-size: 1.8em;
